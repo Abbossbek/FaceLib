@@ -8,7 +8,7 @@ namespace FaceLib
     {
         private Matrix<float> matrix;
 
-        public int Id { get; set; }
+        public string Id { get; set; }
         public float[] Data { get; set; }
         public int Column { get; set; }
         public int Row { get; set; }
@@ -27,7 +27,7 @@ namespace FaceLib
         public FaceEncoding()
         {
         }
-        public FaceEncoding(Matrix<float> faceEncoding, int id = -1)
+        public FaceEncoding(Matrix<float> faceEncoding, string id = null)
         {
             Id = id;
             Data = faceEncoding.ToArray();

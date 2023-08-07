@@ -50,9 +50,8 @@ namespace FaceLib
             }
         }
 
-        public static List<FaceEncoding> LoadFromFile(string filePath)
+        public static List<FaceEncoding> LoadFromFile(this List<FaceEncoding> faceMats, string filePath)
         {
-            List<FaceEncoding> faceMats = new List<FaceEncoding>();
 
             using (StreamReader reader = new StreamReader(filePath))
             {

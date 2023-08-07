@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceLib", "FaceLib\FaceLib.csproj", "{F7BD0151-3F0E-4047-AC26-9A346CA11371}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceLib", "FaceLib\FaceLib.csproj", "{F7BD0151-3F0E-4047-AC26-9A346CA11371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceLibWPF", "FaceLibWPF\FaceLibWPF.csproj", "{665B9D85-D344-4022-95DF-3864D5DC1E90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F7BD0151-3F0E-4047-AC26-9A346CA11371}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7BD0151-3F0E-4047-AC26-9A346CA11371}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7BD0151-3F0E-4047-AC26-9A346CA11371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{665B9D85-D344-4022-95DF-3864D5DC1E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{665B9D85-D344-4022-95DF-3864D5DC1E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{665B9D85-D344-4022-95DF-3864D5DC1E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{665B9D85-D344-4022-95DF-3864D5DC1E90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
