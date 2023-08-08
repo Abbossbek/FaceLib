@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FaceLibWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="700">
     <Grid>
-
-    </Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="200"/>
+		</Grid.ColumnDefinitions>
+		<Image Height="550" Stretch="Uniform" VerticalAlignment="Top" Source="{Binding Preview}" />
+		<StackPanel Grid.Column="1">
+			<Button x:Name="btnAddFace" Content="Add face" IsEnabled="{Binding FaceDetected}"/>
+		</StackPanel>
+	</Grid>
 </Window>

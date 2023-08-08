@@ -20,9 +20,30 @@ namespace FaceLibWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        public BitmapSource Preview
+        {
+            get { return (BitmapSource)GetValue(PreviewProperty); }
+            set { SetValue(PreviewProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Preview.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty PreviewProperty =
+            DependencyProperty.Register("Preview", typeof(BitmapSource), typeof(MainWindow), new PropertyMetadata(null));
+
+        public bool FaceDetected
+        {
+            get { return (bool)GetValue(FaceDetectedProperty); }
+            set { SetValue(FaceDetectedProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for FaceDetected.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty FaceDetectedProperty =
+            DependencyProperty.Register("FaceDetected", typeof(bool), typeof(MainWindow), new PropertyMetadata(false));
+
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }
